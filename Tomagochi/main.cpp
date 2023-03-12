@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 using namespace std;
@@ -27,17 +27,17 @@ int main()
 	int choise;
 	do
 	{
-		cout << "Äîñòóïíûå äåéñòâèÿ:" << endl
-			<< "0 - Âûéòè" << endl
-			<< "1 - Âûñëóøàòü Òîìàãî÷è" << endl
-			<< "2 - Ïîêîðìèòü Òîìàãî÷è" << endl
-			<< "3 - Ïîèãðàòü ñ Òîìàãî÷è" << endl
-		    << "4 - Èçó÷èòü ñîñòîÿíèå Òîìàãî÷è" << endl;
+		cout << "Ð”Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ:" << endl
+			<< "0 - Ð’Ñ‹Ð¹Ñ‚Ð¸" << endl
+			<< "1 - Ð’Ñ‹ÑÐ»ÑƒÑˆÐ°Ñ‚ÑŒ Ð¢Ð¾Ð¼Ð°Ð³Ð¾Ñ‡Ð¸" << endl
+			<< "2 - ÐŸÐ¾ÐºÐ¾Ñ€Ð¼Ð¸Ñ‚ÑŒ Ð¢Ð¾Ð¼Ð°Ð³Ð¾Ñ‡Ð¸" << endl
+			<< "3 - ÐŸÐ¾Ð¸Ð³Ñ€Ð°Ñ‚ÑŒ Ñ Ð¢Ð¾Ð¼Ð°Ð³Ð¾Ñ‡Ð¸" << endl
+		    << "4 - Ð˜Ð·ÑƒÑ‡Ð¸Ñ‚ÑŒ ÑÐ¾ÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¢Ð¾Ð¼Ð°Ð³Ð¾Ñ‡Ð¸" << endl;
 		cin >> choise;
 		switch (choise)
 		{
 		case 0:
-			cout << "Âñåãî äîáðîãî Âàì!!!" << endl;
+			cout << "Ð’ÑÐµÐ³Ð¾ Ð´Ð¾Ð±Ñ€Ð¾Ð³Ð¾ Ð’Ð°Ð¼!!!" << endl;
 			break;
 		case 1:
 			Tom.Talk();
@@ -60,7 +60,7 @@ int main()
 			system("cls");
 			break;
 		default:
-			cout << "Èçâèíèòå, òàêîé âûáîð íåâîçìîæåí, ïîïðîáóéòå ñíîâà "<< endl;
+			cout << "Ð˜Ð·Ð²Ð¸Ð½Ð¸Ñ‚Ðµ, Ñ‚Ð°ÐºÐ¾Ð¹ Ð²Ñ‹Ð±Ð¾Ñ€ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶ÐµÐ½, Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð° "<< endl;
 			system("pause");
 			system("cls");
 		}
@@ -86,19 +86,19 @@ void Tamogochi::PassTime(int time)
 
 void Tamogochi::Talk()
 {
-	cout << "ß Òîìàãî÷è, ÿ ñåáÿ ÷óâñòâóþ: ";
+	cout << "Ð¯ Ð¢Ð¾Ð¼Ð°Ð³Ð¾Ñ‡Ð¸, Ñ ÑÐµÐ±Ñ Ñ‡ÑƒÐ²ÑÑ‚Ð²ÑƒÑŽ: ";
 	int mood = GetMood();
-	if (mood > 20) cout << " âîçìóùåííî" << endl ;
-	else if (mood > 10) cout << " íå óþòíî" << endl ;
-	else if (mood > 5) cout << " õîðîøî "<< endl;
-	else cout << " îòëè÷íî " << endl;
+	if (mood > 20) cout << " Ð²Ð¾Ð·Ð¼ÑƒÑ‰ÐµÐ½Ð½Ð¾" << endl ;
+	else if (mood > 10) cout << " Ð½Ðµ ÑƒÑŽÑ‚Ð½Ð¾" << endl ;
+	else if (mood > 5) cout << " Ñ…Ð¾Ñ€Ð¾ÑˆÐ¾ "<< endl;
+	else cout << " Ð¾Ñ‚Ð»Ð¸Ñ‡Ð½Ð¾ " << endl;
 
 	PassTime();
 }
 
 void Tamogochi::Eat(int food)
 {
-	cout << "Íÿì , Íÿì âêóñíî" << endl;
+	cout << "ÐÑÐ¼ , ÐÑÐ¼ Ð²ÐºÑƒÑÐ½Ð¾" << endl;
 	m_Hunger -= food;
 	if (m_Hunger < 0) m_Hunger = 0;
 	
@@ -107,7 +107,7 @@ void Tamogochi::Eat(int food)
 
 void Tamogochi::Play(int fun)
 {
-	cout << "Óâèèèèèèè" << endl;
+	cout << "Ð£Ð²Ð¸Ð¸Ð¸Ð¸Ð¸Ð¸Ð¸" << endl;
 	m_Boredom -= fun;
 	if (m_Boredom < 0) m_Boredom = 0;
 
@@ -116,8 +116,8 @@ void Tamogochi::Play(int fun)
 
 void Tamogochi::GetPrint()
 {
-	cout << "Óðîâåíü ãîëîäà: " << m_Hunger << endl;
-	cout << "Óðîâåíü ñêóêè: " << m_Boredom << endl;
+	cout << "Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ Ð³Ð¾Ð»Ð¾Ð´Ð°: " << m_Hunger << endl;
+	cout << "Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ ÑÐºÑƒÐºÐ¸: " << m_Boredom << endl;
 }
 
 
